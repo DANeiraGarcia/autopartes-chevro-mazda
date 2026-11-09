@@ -297,7 +297,8 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: left;
+    text-align: center;
+    align-items: center;
 }
 
 .service-card img {
@@ -320,6 +321,7 @@ nav a:hover {
     color: #64748B;
     line-height: 1.6;
     margin-bottom: 24px;
+    text-align: left;
 }
 
 .card-actions {
