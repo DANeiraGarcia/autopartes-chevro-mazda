@@ -549,6 +549,10 @@ footer.footer-pro {
     color: var(--white);
     padding: 60px 10% 20px 10%;
     text-align: left;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .footer-container {
@@ -557,6 +561,9 @@ footer.footer-pro {
     gap: 40px;
     padding-bottom: 40px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .footer-col h3 {
@@ -585,12 +592,13 @@ footer.footer-pro {
     color: #93C5FD;
     font-size: 1.1rem;
     margin-top: 3px;
-    
 }
+
 .footer-info-item a:hover {
     color: #FFFFFF !important; /* Blanco al pasar el cursor */
     text-decoration: underline;
 }
+
 .footer-info-item strong {
     color: #FFFFFF;
 }
