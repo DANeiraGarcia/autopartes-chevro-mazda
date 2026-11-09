@@ -481,12 +481,15 @@ nav a:hover {
 
 /* --- CONTACTO Y MAPA --- */
 .contact-section {
-    padding: 80px 10%;
+    padding: 60px 5%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    gap: 40px;
     background: var(--white);
     align-items: stretch;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 #contactForm {
