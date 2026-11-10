@@ -272,7 +272,7 @@ nav a:hover {
 
 /* --- TARJETAS DE SERVICIOS RESTAURADAS --- */
 .services {
-    padding: 80px 10%;
+    padding: 40px 10%;
     text-align: center;
 }
 
@@ -1134,7 +1134,7 @@ footer.footer-pro {
 }
 /* --- ESTILOS SUBSECCIÓN NUESTROS CLIENTES --- */
 .our-clients-section {
-    padding: 60px 10%;
+    padding: 40px 10%;
     background-color: var(--gray-bg);
     border-top: 1px solid #E2E8F0;
     text-align: center;
@@ -1156,10 +1156,11 @@ footer.footer-pro {
 
 .clients-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, 1fr); /* Fuerza estrictamente 4 columnas en pantallas grandes */
     gap: 25px;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .client-card {
