@@ -76,39 +76,27 @@ Nuestro compromiso es brindar máxima tranquilidad, respaldo técnico y agilidad
         </section>
         <!-- --- SUBSECCIÓN: NUESTROS CLIENTES --- -->
         <section class="our-clients-section">
-            <div class="clients-container">
-               <h2>Nuestros Clientes</h2>
-                 <p class="clients-intro">
-                    A lo largo de nuestra trayectoria y experiencia, hemos brindado el respaldo técnico y operativo necesario a importantes flotas y empresas líderes, garantizando soluciones de mantenimiento y repuestos con los más altos estándares de calidad y confianza.
-                 </p>
-        
-                <div class="clients-grid">
-                    <div class="client-card">
-                        <img src="jpg/logo asisya.png" alt="Ayvens">
-                    </div>
-                    <div class="client-card">
-                        <img src="jpg/evyns logo clear.png" alt="Renting Colombia">
-                    </div>
-                    <div class="client-card">
-                        <img src="jpg/mundial_de_montacargas_logo.jfif" alt="Royal Rent a Car">
-                    </div>
-                    <div class="client-card">
-                        <img src="jpg/logo-renting3.png" alt="Mundial de Montacargas">
-                    </div>
-                    <div class="client-card">
-                        <img src="jpg/logo kikes.jfif" alt="Kikes">
-                    </div>
-                    <div class="client-card">
-                        <img src="jpg/logo-novafrios.webp" alt="Novafrios">
-                    </div>
-                    <div class="client-card">
-                        <img src="jpg/ECSI-logo-1-2-1030x579.png" alt="ECSI">
-                    </div>
-                    <div class="client-card">
-                        <img src="jpg/sonorared.jpg" alt="Sonora">
-                    </div>
-                </div>
-            </div>
+            <div class="clients-grid">
+    <!-- PRIMERA TANDA (8 CLIENTES) -->
+    <div class="client-card"><img src="jpg/logo asisya.png" alt="Asisya"></div>
+    <div class="client-card"><img src="jpg/evyns logo clear.png" alt="Ayvens"></div>
+    <div class="client-card"><img src="jpg/mundial_de_montacargas_logo.jfif" alt="Mundial de Montacargas"></div>
+    <div class="client-card"><img src="jpg/logo-renting3.png" alt="Renting Colombia"></div>
+    <div class="client-card"><img src="jpg/logo kikes.jfif" alt="Kikes"></div>
+    <div class="client-card"><img src="jpg/logo-novafrios.webp" alt="Novafrios"></div>
+    <div class="client-card"><img src="jpg/ECSI-logo-1-2-1030x579.png" alt="ECSI"></div>
+    <div class="client-card"><img src="jpg/logo sonora.jpg" alt="Arroz Sonora"></div>
+
+    <!-- SEGUNDA TANDA EXACTAMENTE IGUAL (PARA EL BUCLE INFINITO) -->
+    <div class="client-card"><img src="jpg/logo asisya.png" alt="Asisya"></div>
+    <div class="client-card"><img src="jpg/evyns logo clear.png" alt="Ayvens"></div>
+    <div class="client-card"><img src="jpg/mundial_de_montacargas_logo.jfif" alt="Mundial de Montacargas"></div>
+    <div class="client-card"><img src="jpg/logo-renting3.png" alt="Renting Colombia"></div>
+    <div class="client-card"><img src="jpg/logo kikes.jfif" alt="Kikes"></div>
+    <div class="client-card"><img src="jpg/logo-novafrios.webp" alt="Novafrios"></div>
+    <div class="client-card"><img src="jpg/ECSI-logo-1-2-1030x579.png" alt="ECSI"></div>
+    <div class="client-card"><img src="jpg/logo sonora.jpg" alt="Arroz Sonora"></div>
+</div>
         </section>
 
         <!-- SERVICIOS -->
@@ -553,6 +541,7 @@ Nuestro compromiso es brindar máxima tranquilidad, respaldo técnico y agilidad
                 <h2>Agenda tu Cita o Cotización</h2>
                 <input type="text" placeholder="Su Nombre Completo" required>
                 <input type="tel" placeholder="Teléfono / WhatsApp" required>
+                <input type="email" id="emailCliente" placeholder="Correo Electrónico (Ej. correo@ejemplo.com)" required>
                 <input type="text" placeholder="Modelo del Vehículo (Ej. Mazda 3 2020)" required>
                 <select id="tipoServicio" required>
                     <option value="">Seleccione el servicio o cotización</option>
@@ -781,6 +770,7 @@ Nuestro compromiso es brindar máxima tranquilidad, respaldo técnico y agilidad
             
             const nombre = form.querySelectorAll('input')[0].value;
             const telefono = form.querySelectorAll('input')[1].value;
+            const email = document.getElementById('emailCliente').value;
             const vehiculo = form.querySelectorAll('input')[2].value;
             const servicio = document.getElementById('tipoServicio').value;
             const fechaDeseada = document.getElementById('fechaCita').value;
@@ -790,6 +780,7 @@ Nuestro compromiso es brindar máxima tranquilidad, respaldo técnico y agilidad
             const data = {
                 nombre: nombre,
                 telefono: telefono,
+                email: email,
                 vehiculo: vehiculo,
                 servicio: servicio,
                 fecha: fechaDeseada,  // Campo independiente para la fecha
