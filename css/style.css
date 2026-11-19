@@ -505,6 +505,9 @@ nav a:hover {
     max-width: 100%;
     overflow: hidden;
 }
+.contact-section h2 {
+    text-align: center;
+}
 
 #contactForm {
     display: flex;
@@ -536,6 +539,7 @@ nav a:hover {
     font-size: 1.8rem;
     color: var(--primary-blue);
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .map-container {
