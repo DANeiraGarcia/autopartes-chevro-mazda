@@ -937,7 +937,7 @@ footer.footer-pro {
     }
     
     .logo-container img {
-        height: 130px !important; /* Tamaño proporcional para móvil */
+        height: 110px !important; /* Tamaño proporcional para móvil */
     }
 
     /* El menú desplegable abajo */
