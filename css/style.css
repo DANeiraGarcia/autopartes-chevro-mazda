@@ -257,7 +257,10 @@ nav a:hover {
     background: var(--white);
 }
 
-
+.about h2 {
+    text-align: center;
+    margin-bottom: 24px;
+}
 
 .about-img-container img {
     width: 100%;
@@ -272,7 +275,7 @@ nav a:hover {
 
 /* --- TARJETAS DE SERVICIOS RESTAURADAS --- */
 .services {
-    padding: 40px 10%;
+    padding: 20px 7% 40px;
     text-align: center;
 }
 
@@ -357,7 +360,7 @@ nav a:hover {
 /* --- PORTAFOLIO DE REPUESTOS --- */
 
 .parts-portfolio {
-    padding: 80px 10%;
+    padding: 35px 10% 30px;
     background: var(--white);
     text-align: center;
 }
@@ -437,12 +440,21 @@ nav a:hover {
 }
 /* --- GALERÍA DEL TALLER --- */
 .gallery-section {
-    padding: 40px 7%;
+    
+    padding: 25px 7% 40px;
     text-align: center;
 }
 .paint-section {
-    padding: 40px 7%;
+    padding: 20px 7% 40px;
     text-align: center;
+}
+.paint-section .gallery img {
+    width: 100%;
+    height: 260px; /* Súbelo a 280px o bájalo a 220px según el alto que prefieras */
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    display: block;
 }
 
 .section-title-animated {
@@ -1233,4 +1245,25 @@ footer.footer-pro {
         height: 95px;
         padding: 15px;
     }
+}
+
+/* Coloca esto AL FINAL de tu CSS para que ninguna regla anterior lo pise */
+.paint-section .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1050px;
+    margin: 40px auto 0;
+}
+
+.paint-section .gallery img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+.paint-section .gallery img:first-child {
+    clip-path: inset(0 0 0 12px round 12px);
 }
