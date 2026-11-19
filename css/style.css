@@ -446,18 +446,7 @@ nav a:hover {
     padding: 25px 7% 40px;
     text-align: center;
 }
-.paint-section {
-    padding: 20px 7% 40px;
-    text-align: center;
-}
-.paint-section .gallery img {
-    width: 100%;
-    height: 260px; /* Súbelo a 280px o bájalo a 220px según el alto que prefieras */
-    object-fit: cover;
-    object-position: center;
-    border-radius: 12px;
-    display: block;
-}
+
 
 .section-title-animated {
     font-size: 2.2rem;
@@ -1245,24 +1234,46 @@ footer.footer-pro {
         padding: 15px;
     }
 }
+.paint-section {
+    padding: 20px 2% 40px;
+    text-align: center;
+}
 
-/* Coloca esto AL FINAL de tu CSS para que ninguna regla anterior lo pise */
 .paint-section .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     max-width: 1050px;
     margin: 40px auto 0;
+    align-items: center;
 }
 
 .paint-section .gallery img {
     width: 100%;
-    height: 260px;
+    height: 360px;
     object-fit: cover;
+    object-position: center;
     border-radius: 12px;
     display: block;
+    clip-path: none;
 }
 
 .paint-section .gallery img:first-child {
-    clip-path: inset(0 0 0 12px round 12px);
+    clip-path: none;
+}
+
+@media (max-width: 768px) {
+    .paint-section .gallery {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .paint-section .gallery img {
+        height: 220px;
+        clip-path: none;
+    }
+
+    .paint-section .gallery img:first-child {
+        clip-path: none;
+    }
 }
